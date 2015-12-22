@@ -4,7 +4,8 @@
   "description": "common logo, icons and css for webuild.sg related sites",
   "main": "index.html",
   "scripts": {
-    "build": "stylus --compress css/style.styl css/style.css",
+    "build": "stylus css/style.styl css/style.css && cleancss -o css/style.min.css css/style.css --skip-import",
+    "deploy": "git push origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/webuildsg/assets#readme",
   "devDependencies": {
+    "clean-css": "^3.4.8",
     "stylus": "^0.53.0"
   }
 }
