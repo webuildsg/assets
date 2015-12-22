@@ -1,0 +1,29 @@
+{
+  "name": "webuildsg-assets",
+  "version": "1.0.0",
+  "description": "common logo, icons and css for webuild.sg related sites",
+  "main": "index.html",
+  "scripts": {
+    "build": "stylus --compress css/style.styl css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webuildsg/assets.git"
+  },
+  "keywords": [
+    "assets",
+    "css",
+    "stylus",
+    "logo",
+    "favicon"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webuildsg/assets/issues"
+  },
+  "homepage": "https://github.com/webuildsg/assets#readme",
+  "devDependencies": {
+    "stylus": "^0.53.0"
+  }
+}
