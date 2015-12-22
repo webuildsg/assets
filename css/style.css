@@ -289,11 +289,19 @@ body {
 .container {
   width: 960px;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 header {
   width: 100%;
   background-color: #c11a18;
   padding: 0 0 15px 0;
+  cursor: pointer;
+}
+.starter {
+  width: 100%;
+  background: #f7f2d2;
+  padding: 0;
 }
 .main {
   margin: 0 auto 20px auto;
@@ -403,6 +411,16 @@ p span {
   margin: 0 0 0 10px;
   font-size: 0.9rem;
 }
+.subtitle {
+  color: #666;
+  text-align: center;
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 1.1rem;
+  text-overflow: ellipsis;
+}
+overflow: hidden,
 a.credit {
   padding: 10px 0 40px 0;
   display: block;
@@ -410,11 +428,15 @@ a.credit {
   text-align: center;
   text-decoration: none;
 }
+overflow: hidden:link,
 a.credit:link,
+overflow: hidden:visited,
 a.credit:visited {
   color: #f8f4da;
 }
+overflow: hidden:hover,
 a.credit:hover,
+overflow: hidden:active,
 a.credit:active {
   color: #e06149;
 }
@@ -451,6 +473,76 @@ a.credit:active {
 }
 .icon-github:before {
   content: "\e60c";
+}
+.icon-music:before {
+  content: "\e605";
+}
+.icon-volume-medium:before {
+  content: "\e606";
+}
+.icon-facebook:before {
+  content: "\e600";
+}
+.icon-twitter:before {
+  content: "\e601";
+}
+.icon-feed:before {
+  content: "\e602";
+}
+.icon-github:before {
+  content: "\e603";
+}
+.icon-cc:before {
+  content: "\e604";
+}
+.icon-cal:before {
+  content: "\e607";
+}
+.social {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  color: #f1e9b4;
+}
+.social li {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', Helvetica Neue, sans-serif;
+  font-weight: 200;
+  margin: 0 2%;
+  line-height: 1.2em;
+  display: inline-block;
+}
+.social a {
+  font-size: 1rem;
+  vertical-align: top;
+}
+.social a:link,
+.social a:visited {
+  color: #f1e9b4;
+}
+.social a:hover,
+.social a:active {
+  text-decoration: underline;
+}
+.splash {
+  background-color: #fff;
+  font-size: 1.5vw;
+  position: absolute;
+  right: 5rem;
+  bottom: 3rem;
+  padding: 0.5rem;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  border: 5px solid #228db7;
+  color: #c11a18;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+  border-radius: 0.5vw;
 }
 .live {
   width: 100%;
@@ -705,14 +797,6 @@ a.credit:active {
     transform: rotate(360deg);
   }
 }
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 @media only screen and (max-width: 960px) {
   .container {
     width: 95%;
@@ -731,6 +815,10 @@ a.credit:active {
 @media only screen and (max-width: 720px) {
   h1 {
     letter-spacing: 0.1rem;
+  }
+  .splash,
+  .post-thumbnail {
+    display: none;
   }
   section {
     width: 100%;
@@ -828,5 +916,61 @@ a.credit:active {
   h2,
   h3 {
     page-break-after: avoid;
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
