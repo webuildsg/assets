@@ -4,7 +4,9 @@
   "description": "common logo, icons and css for webuild.sg related sites",
   "main": "index.html",
   "scripts": {
-    "build": "stylus css/style.styl css/style.css && cleancss -o css/style.min.css css/style.css --skip-import",
+    "build:css": "stylus css/style.styl css/style.css",
+    "build:min": "cleancss -o css/style.min.css css/style.css --skip-import",
+    "build": "npm run build:css && npm run build:min",
     "deploy": "git push origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
