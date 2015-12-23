@@ -735,31 +735,6 @@ a.credit:active {
 .list-graph img {
   display: block;
 }
-.searchable .graph-logo {
-  display: block;
-  background: #fff;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  padding: 1.8em;
-  height: 120px;
-  width: 120px;
-}
-.searchable:hover .svg-icon-graph {
-  fill: #228db7;
-  stroke: #228db7;
-}
-.searchable:hover span {
-  background: #f8f4da;
-}
-.searchable:hover .graph-name {
-  color: #c11a18;
-}
-.searchable a {
-  text-decoration: none;
-}
 .boxes {
   padding: 0;
 }
@@ -800,6 +775,31 @@ a.credit:active {
 }
 .search:focus {
   border-color: #228db7;
+}
+.searchable .graph-logo {
+  display: block;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  padding: 1.8em;
+  height: 120px;
+  width: 120px;
+}
+.searchable:hover .svg-icon-graph {
+  fill: #228db7;
+  stroke: #228db7;
+}
+.searchable:hover span {
+  background: #f8f4da;
+}
+.searchable:hover .graph-name {
+  color: #c11a18;
+}
+.searchable a {
+  text-decoration: none;
 }
 .graph-section {
   margin: 3em 0;
@@ -1153,14 +1153,6 @@ text {
     transform: rotate(360deg);
   }
 }
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .post-thumbnail {
   display: inline-block;
   float: left;
@@ -1447,5 +1439,37 @@ text {
   h2,
   h3 {
     page-break-after: avoid;
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
