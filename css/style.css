@@ -1269,6 +1269,11 @@ path {
 .mobile-on {
   display: none;
 }
+@media only screen and (max-width: 1200px) {
+  .list-posts>li {
+    width: 45%;
+  }
+}
 @media only screen and (max-width: 960px) {
   .container {
     width: 95%;
@@ -1293,8 +1298,7 @@ path {
   .select-lang li {
     width: 14%;
   }
-  .boxes li,
-  .list-posts>li {
+  .boxes li {
     width: 45%;
   }
 }
