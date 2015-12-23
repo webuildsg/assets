@@ -4,14 +4,12 @@
   "description": "common logo, icons and css for webuild.sg related sites",
   "main": "index.html",
   "scripts": {
-    "build:css": "stylus css/style.styl css/style.css",
-    "build:min": "cleancss -o css/style.min.css css/style.css --skip-import",
-    "build": "npm run clean && npm run build:css && npm run build:min",
-    "clean": "rm css/style.css && rm css/style.min.css && touch css/style.css",
+    "build": "stylus css/style.styl --compress",
+    "clean": "rm css/style.css",
     "deploy": "git push origin gh-pages",
-    "start": "http-server -p 8888",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npm run clean && stylus css/style.styl css/style.css --watch"
+    "start": "parallelshell 'http-server -p 8888' 'npm run watch'",
+    "test": "echo All good!",
+    "watch": "npm run clean && stylus css/style.styl --compress --watch"
   },
   "repository": {
     "type": "git",
@@ -30,8 +28,9 @@
   },
   "homepage": "https://github.com/webuildsg/assets#readme",
   "devDependencies": {
-    "clean-css": "^3.4.8",
+    "csslint": "^0.10.0",
     "http-server": "^0.8.5",
+    "parallelshell": "latest",
     "stylus": "^0.53.0"
   }
 }
