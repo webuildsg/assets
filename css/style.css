@@ -545,6 +545,28 @@ a.credit:active {
 .list-social a:active {
   text-decoration: underline;
 }
+.list-pages {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.list-pages li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.list-pages a {
+  text-decoration: none;
+}
+.list-pages a:link,
+.list-pages a:visited {
+  color: #228db7;
+}
+.list-pages a:hover,
+.list-pages a:active {
+  color: #c11a18;
+}
 .splash {
   background-color: #fff;
   font-size: 1.5vw;
@@ -840,6 +862,12 @@ a.credit:active {
   .splash,
   .post-thumbnail {
     display: none;
+  }
+  .pages {
+    font-size: 1rem;
+  }
+  .pages li {
+    margin: 0 0.5rem;
   }
   section {
     width: 100%;
