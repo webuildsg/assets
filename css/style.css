@@ -735,7 +735,7 @@ a.credit:active {
 .list-graph img {
   display: block;
 }
-.searchable span {
+.searchable .graph-logo {
   display: block;
   background: #fff;
   -webkit-border-radius: 50%;

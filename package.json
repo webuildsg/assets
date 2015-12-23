@@ -6,11 +6,12 @@
   "scripts": {
     "build:css": "stylus css/style.styl css/style.css",
     "build:min": "cleancss -o css/style.min.css css/style.css --skip-import",
-    "build": "npm run build:css && npm run build:min",
+    "build": "npm run clean && npm run build:css && npm run build:min",
+    "clean": "rm css/style.css && rm css/style.min.css && touch css/style.css",
     "deploy": "git push origin gh-pages",
     "start": "http-server -p 8888",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "stylus css/style.styl css/style.css --watch"
+    "watch": "npm run clean && stylus css/style.styl css/style.css --watch"
   },
   "repository": {
     "type": "git",
