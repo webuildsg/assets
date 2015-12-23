@@ -1,3 +1,6 @@
+.mobile-on
+  display: none
+
 @media only screen and (max-width: 960px)
   .container
     width: 95%
@@ -8,8 +11,27 @@
     padding: 0 10% 0 0
   footer p
     width: 100%
+  .mobile-off
+    display: none
+  .mobile-on
+    max-width: 100%;
+    display: block
+  .select-lang li
+    width: 14%
+  .boxes li
+    width: 45%
 
-// single column
+@media only screen and (max-width: 800px)
+  h3
+    font-size: 2em
+  .explain
+    width: 100%
+    display: block
+  .splash
+    display: none
+  .select-lang li
+    width: 30%
+
 @media only screen and (max-width: 720px)
   h1
     letter-spacing: 0.1rem
@@ -42,6 +64,14 @@
     width: 210px
     margin-top: 0
 
+@media only screen and (max-width: 600px)
+  .graph-label, .graph-bar
+    font-size: .9em
+  .bar
+    height: 32px
+  .boxes li
+    width: 98%
+    
 @media only screen and (max-width: 550px)
   .input
     padding: .5rem

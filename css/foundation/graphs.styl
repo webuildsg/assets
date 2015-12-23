@@ -1,0 +1,107 @@
+.graph-section
+  margin: 3em 0
+  border-bottom: 1px solid #ddd
+
+.graph
+  margin: 2em 0 0 0
+  width: 100%
+  padding-bottom: 4em
+
+.map
+  margin: 2em auto
+  width: 800px
+
+path
+  stroke: $blue
+  stroke-width: 3
+  fill: none
+
+.axis
+  shape-rendering: crispEdges
+  fill: #777
+
+.x.axis line
+  stroke: lightgrey
+
+.x.axis .minor
+  stroke-opacity: .5
+
+.x.axis path
+  display: block
+  stroke: #777
+  stroke-width: 2
+
+.y.axis line, .y.axis path
+  fill: none
+  stroke: #777
+  stroke-width: 2
+  display: block
+
+text
+  color: green
+
+.line
+  fill: none
+  stroke: $blue
+  stroke-width: 3px
+
+.overlay
+  fill: none
+  pointer-events: all
+
+.focus circle
+  fill: $blue
+  stroke: $blue
+
+.label
+  fill: $red
+  font-size: 18px
+  text-transform: lowercase
+
+// bar graph
+.bar
+  height: 40px;
+  margin: .1em 0;
+
+.graph-bar, .graph-label
+  display: inline-block;
+  padding: .5em;
+  vertical-align: top;
+
+.graph-label
+  width: 30%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  background: $blue;
+  color: $white;
+
+.graph-label a
+  color: $white;
+
+.graph-bar
+  background: #f8f4da;
+  text-align: right;
+
+// select programming language graph
+
+.select-lang
+  padding: 0
+  li
+    display: inline-block
+    margin: .5em 2em
+    width: 12%
+  label *
+    pointer-events: none
+
+.list-lang
+  p
+    width: 100%
+    margin: .5em auto
+    text-align: center
+    font-family: $serif
+  p a
+    color: $blue // #666
+    background: #f8f4da
+    text-decoration: none
+    padding: .5em
