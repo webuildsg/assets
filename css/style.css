@@ -1327,7 +1327,7 @@ path {
   .list-pages li {
     margin: 0 0.5rem;
   }
-  .list-post>li {
+  .list-posts>li {
     width: 95%;
   }
   .chat,
