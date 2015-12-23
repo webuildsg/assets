@@ -747,9 +747,6 @@ a.credit:active {
   height: 120px;
   width: 120px;
 }
-.searchable:hover span {
-  background: #eee;
-}
 .searchable:hover .svg-icon-graph {
   fill: #228db7;
   stroke: #228db7;
@@ -1012,6 +1009,7 @@ text {
 .video {
   width: 90%;
   margin: 1rem auto 3rem;
+  text-align: center;
 }
 .spinner {
   border: 3px solid #333;
