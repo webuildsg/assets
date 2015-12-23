@@ -20,25 +20,21 @@ path
   shape-rendering: crispEdges
   fill: $grey-dark
 
-.x.axis line
-  stroke: lightgrey
-
-.x.axis .minor
-  stroke-opacity: .5
-
-.x.axis path
-  display: block
-  stroke: $grey-dark
-  stroke-width: 2
+.x.axis
+  line
+    stroke: lightgrey
+  .minor
+    stroke-opacity: .5
+  path
+    display: block
+    stroke: $grey-dark
+    stroke-width: 2
 
 .y.axis line, .y.axis path
   fill: none
   stroke: $grey-dark
   stroke-width: 2
   display: block
-
-text
-  color: green
 
 .line
   fill: none
@@ -60,24 +56,23 @@ text
 
 // bar graph
 .bar
-  height: 40px;
-  margin: .1em 0;
+  height: 40px
+  margin: .1em 0
 
 .graph-bar, .graph-label
-  display: inline-block;
-  padding: .5em;
-  vertical-align: top;
+  display: inline-block
+  padding: .5em
+  vertical-align: top
 
 .graph-label
-  width: 30%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  background: $blue;
-  color: $white;
-
-.graph-label a
-  color: $white;
+  width: 30%
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap
+  background: $blue
+  color: $white
+  a
+    color: $white
 
 .graph-bar
   background: $yellow-light2

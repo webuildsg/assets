@@ -355,7 +355,7 @@ audio {
 body {
   font-size: 16px;
   line-height: 1.25;
-  font-family: 'Open Sans', Helvetica Neue, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   font-style: normal;
 }
 h1,
@@ -380,7 +380,7 @@ h1 {
 h2 {
   font-size: 1.55rem;
   text-align: left;
-  font-family: 'Open Sans', Helvetica Neue, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   color: #f1e9b4;
   font-weight: 200;
   margin: 0;
@@ -548,13 +548,6 @@ a.credit:active {
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'footer';
-  src: url("fonts/footer.eot?fdxtsx");
-  src: url("fonts/footer.eot?#iefixfdxtsx") format('embedded-opentype'), url("fonts/footer.woff?fdxtsx") format('woff'), url("fonts/footer.ttf?fdxtsx") format('truetype'), url("fonts/footer.svg?fdxtsx#social") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: 'social';
@@ -567,29 +560,12 @@ a.credit:active {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-[class^="footer-"],
-[class*=" footer-"] {
+@font-face {
   font-family: 'footer';
-  speak: none;
-  font-style: normal;
+  src: url("fonts/footer.eot?fdxtsx");
+  src: url("fonts/footer.eot?#iefixfdxtsx") format('embedded-opentype'), url("fonts/footer.woff?fdxtsx") format('woff'), url("fonts/footer.ttf?fdxtsx") format('truetype'), url("fonts/footer.svg?fdxtsx#social") format('svg');
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.footer-calendar:before {
-  content: "\e60b";
-}
-.footer-facebook:before {
-  content: "\e609";
-}
-.footer-twitter:before {
-  content: "\e60a";
-}
-.footer-github:before {
-  content: "\e60c";
+  font-style: normal;
 }
 .icon-music:before {
   content: "\e605";
@@ -620,6 +596,30 @@ a.credit:active {
   stroke: #999;
   stroke-width: 0;
 }
+[class^="footer-"],
+[class*=" footer-"] {
+  font-family: 'footer';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.footer-calendar:before {
+  content: "\e60b";
+}
+.footer-facebook:before {
+  content: "\e609";
+}
+.footer-twitter:before {
+  content: "\e60a";
+}
+.footer-github:before {
+  content: "\e60c";
+}
 .list-social {
   list-style: none;
   padding: 0;
@@ -629,7 +629,7 @@ a.credit:active {
 }
 .list-social li {
   font-size: 2rem;
-  font-family: 'Open Sans', Helvetica Neue, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   font-weight: 200;
   margin: 0 2%;
   line-height: 1.2em;
@@ -767,11 +767,7 @@ a.credit:active {
   padding: 1rem 2rem;
   text-align: center;
   color: #000;
-  font-family: 'Open Sans', Helvetica Neue, sans-serif;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 .search:focus {
   border-color: #228db7;
@@ -840,9 +836,6 @@ path {
   stroke: #777;
   stroke-width: 2;
   display: block;
-}
-text {
-  color: #008000;
 }
 .line {
   fill: none;
@@ -998,7 +991,7 @@ text {
   padding: 0.5rem;
   border: 0;
   background: #f8f4da;
-  font-family: 'Open Sans', Helvetica Neue, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   color: #666;
   margin: 2rem auto 1rem;
   outline: none;
@@ -1257,7 +1250,7 @@ text {
 .social li p {
   font-size: 1rem;
   color: #666;
-  font-family: 'Open Sans', Helvetica Neue, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 .social a {
   color: #228db7;

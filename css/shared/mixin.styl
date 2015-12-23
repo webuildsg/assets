@@ -22,3 +22,22 @@ transition-duration($time)
   -moz-transition-duration: $time
   -o-transition-duration: $time
   transition-duration: $time
+
+scale-mixin($amount)
+  -webkit-transform: scale($amount, $amount)
+  -moz-transform: scale($amount, $amount)
+  -ms-transform: scale($amount, $amount)
+  -o-transform: scale($amount, $amount)
+  transform: scale($amount, $amount)
+
+tranition-mixin($which, $time, $how)
+  -webkit-transition: $which $time $how
+  -moz-transition: $which $time $how
+  -ms-transition: $which $time $how
+  -o-transition: $which $time $how
+
+animation-mixin($name, $time, $timing, $iteration)
+  -webkit-animation: $name $time $timing $iteration
+  -moz-animation: $name $time $timing $iteration
+  -o-animation: $name $time $timing $iteration
+  animation: $name $time $timing $iteration

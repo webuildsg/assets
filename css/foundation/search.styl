@@ -9,17 +9,14 @@
   text-align: center
   color: $black
   font-family: $sans
-  -webkit-transition: all 0.30s ease-in-out
-  -moz-transition: all 0.30s ease-in-out
-  -ms-transition: all 0.30s ease-in-out
-  -o-transition: all 0.30s ease-in-out
+  transition-mixin(all, 0.3s, ease-in-out)
   &:focus
     border-color: $blue
 
 .searchable
   .graph-logo
     display: block
-    background: #fff
+    background: $white
     border-radius: 50%
     padding: 1.8em
     height: 120px
@@ -28,8 +25,8 @@
     fill: $blue
     stroke: $blue
   &:hover span
-    background: #f8f4da
+    background: $yellow-light2
   &:hover .graph-name
     color: $red
   a
-    text-decoration: none   
+    text-decoration: none
