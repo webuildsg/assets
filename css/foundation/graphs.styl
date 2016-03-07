@@ -99,3 +99,21 @@ path
       background: $yellow-light2
       text-decoration: none
       padding: .5em
+
+.graph-hover
+  z-index: 100
+  display: none
+  position: absolute
+  top: -10px
+  right: 0
+  font-size: .8em
+  color: $blue
+  opacity: .6
+  background: #eee
+  padding: .2em .6em
+  border-radius: 5px
+
+.bar
+  position: relative
+  &:hover .graph-hover
+    display: block
