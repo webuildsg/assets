@@ -17,7 +17,18 @@
     display: block
     margin-bottom: 1rem
 
-.post, .page-content
+.page-content
+  p, ul, ol
+    color: $grey
+  a
+    color: $blue
+    text-decoration: none
+    &:link, &:visited
+      color: $blue
+    &:hover, &:active
+      color: $red
+      
+.post,
   p
     color: $grey
     font-size: 0.9rem
