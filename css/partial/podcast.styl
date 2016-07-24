@@ -35,8 +35,12 @@
   margin: 1.5em 0
   line-height: 1.4
 
-.next-topics a:link, .next-topics a:hover, .next-topics a:hover, .next-topics a:active
-  color: $blue
+.next-topics
+  a
+    &:link, &:visited
+      color: $blue
+    &:hover, &:active
+      color: $red-light
 
 @media only screen and (max-width: 800px)
   .guest, .chat
