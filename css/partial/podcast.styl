@@ -1,0 +1,46 @@
+.sidebar
+  display: flex
+  flex-direction: row
+
+.guest, .chat
+  width: 50%
+
+.guest
+  order: 1
+
+.chat
+  order: 2
+  iframe
+    height: 315px
+    border: 1px solid #eee
+
+.next-profile
+  height: 100px
+  float: left
+  margin-right: 15px
+  display: inline-block
+
+.next-episode
+  display: inline-block
+  line-height: 1.2
+
+.next-name
+  color: $grey
+  margin: .5em 0
+  font-size: 1.5em
+
+.next-topics
+  color: $grey
+  margin: 1.5em 0
+  line-height: 1.4
+
+.next-topics a:link, .next-topics a:hover, .next-topics a:hover, .next-topics a:active
+  color: $blue
+
+@media only screen and (max-width: 800px)
+  .guest, .chat
+    width: 100%
+  .guest
+    padding: 1em
+  .sidebar
+    display: block
