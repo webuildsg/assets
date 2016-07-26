@@ -40,10 +40,13 @@
   font-size: 1.2em
   padding: .3em
   display: block
-	
+
 .button
 	background: $blue
 	color: $white
 	border: none
 	padding: 1em 1.5em
 	border-radius: 5px
+
+.button[disabled]
+  background: lighten($blue, 20%)
