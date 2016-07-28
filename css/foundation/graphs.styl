@@ -112,3 +112,28 @@ path
   position: relative
   &:hover .graph-hover
     display: block
+
+.chart
+  margin: 2em 0
+
+.column
+  fill: $blue
+  &:hover
+    fill: $red
+
+.column-light
+  fill: lighten($blue, 20%)
+  &:hover
+    fill: lighten($red, 20%)
+
+.axis
+  font: 10px sans-serif
+
+.axis
+  path, line
+    fill: none
+    stroke: #000
+    shape-rendering: crispEdges
+
+.x.axis path
+  display: none
