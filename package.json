@@ -28,9 +28,9 @@
   },
   "homepage": "https://github.com/webuildsg/assets#readme",
   "devDependencies": {
-    "csslint": "^0.10.0",
-    "http-server": "^0.8.5",
+    "csslint": "^1.0.4",
+    "http-server": "^0.9.0",
     "parallelshell": "latest",
-    "stylus": "^0.53.0"
+    "stylus": "^0.54.5"
   }
 }
